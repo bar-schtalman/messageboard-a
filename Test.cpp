@@ -27,6 +27,7 @@ TEST_CASE("random size Horizontal post and read"){
     CHECK (board.read(row,col,Direction::Horizontal,2) == msg );
     }
 };
+
 TEST_CASE("random size Vertical post and read"){
     Board board;
     for(int i = 0 ; i < 100 ; i ++){
@@ -37,7 +38,8 @@ TEST_CASE("random size Vertical post and read"){
     CHECK (board.read(row,col,Direction::Vertical,2) == msg );
     }
 };
-TEST_CASE("empty boardmessage"){
+
+TEST_CASE("empty messageboard"){
     Board board;
     for(int i = 0 ; i < 100 ; i ++){
     unsigned int row = rand() % 500;
